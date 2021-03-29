@@ -1,0 +1,12 @@
+<div>
+    <p>
+      <strong>submitted By: </strong>{{ quote.submittedBy }}
+      {{ quote.dateCreated | dayCount }} days ago
+    </p>
+    <p>
+      <button (click)="downVote(true)"class="circle btn btn-warning"> N </button>
+      <span class="mr-2">{{ quote.votes }}</span>
+      <button (click)="upVote(true)" class="circle btn btn-success"> Y </button>
+    </p>
+    <button class="circle btn btn-danger shadow-none" (click)="deleteQuote(true)"> X</button>
+</div>
