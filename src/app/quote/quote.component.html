@@ -1,0 +1,25 @@
+<div class="container">
+    <h1 class="text-primary">My Quotes</h1>
+    <hr>
+    <div class="row">
+    <div class="col-md-6">
+        <div *ngFor="let quote of quotes; let i = index">
+          <div>
+            <h3>Quote {{ i + 1 }} of {{ quotes.length}}<span class="badge badge-primary" appShowbadge *ngIf="highestVote() === quote.votes">Most Voted</span></h3>
+          </div>
+          <div>
+            <blockquote class="blockquote mb-0">
+              <p class="lead">{{ quote.quote }}</p>
+              <span class="quote-author blockquote-footer">{{ quote.author }}</span>
+            </blockquote>
+          </div>
+            <button class="btn btn-outline-primary shadow-none"(click)="toggleDetails(i)">Toggle Details</button>
+            <app-quote-detail *ngIf="quote.showDetails"[quote]="quote"(isComplete)="deleteQuote($event, i)"(isUpVote)="upVoteQuote($event, i)"(isDownVote)="downVoteQuote($event, i)"></app-quote-detail>
+        </div>
+        <hr>
+    </div>
+     <div class="col-md-6 col">
+        <app-quote-form (addQuote)="addNewQuote($event)"> </app-quote-form>
+     </div>
+    </div>
+</div>
