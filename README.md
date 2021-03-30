@@ -13,11 +13,11 @@ The project was generated with [Angular CLI]
 ## Setup/Installation Requirments
 
 - run npm install -g @angular/cli@next npm update.
-- clone this repo ```bash git clone (https:git@github.com:Dasi202/Quotes.git)```
-- cd into the quote folder ```bash cd quote ```
-- run ```bash npm install ```
-- Run ```bash ng serve``` for a dev server.
-- Navigate to ```bash http://localhost:4200/ ```
+- clone this repo ``` git clone (https:git@github.com:Dasi202/Quotes.git)```
+- cd into the quote folder ``` cd quote ```
+- run ``` npm install ```
+- Run ``` ng serve``` for a dev server.
+- Navigate to ``` http://localhost:4200/ ```
 
 ## BDD
 * Create a new quote.
