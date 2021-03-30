@@ -26,6 +26,7 @@ The project was generated with [Angular CLI]
 * See the number of upvote and number of downvotes for each quote.
 
 ## Live link
+Visit site: ,.[https://dasi202.github.io/Quotes/](https://dasi202.github.io/Quotes/)
 
 ## Technologies Used
 * Angular
